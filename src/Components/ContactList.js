@@ -40,6 +40,7 @@ class ContactData extends Component {
         randomZahl: 0,
         deleteButtonCount: this.props.DeleteOnButton,
         sortUp: true,
+        sortUp2: true,
     }
 
     NewContactAdded = () => {
@@ -121,6 +122,16 @@ class ContactData extends Component {
         }
     }
 
+    SorteRateLowHighUNDHighLow = () => {
+        if (this.state.sortUp2 === true) {
+            this.SortRateLowHigh();
+            this.setState({ sortUp2: !this.state.sortUp2 })
+        } else {
+            this.SortRateHighLow();
+            this.setState({ sortUp2: !this.state.sortUp2 })
+        }
+    }
+
     SortRateLowHigh = () => {
         const sortedArray = this.state.contactState.sort((a, b) => {
             let eltA = a.popularity;
@@ -157,6 +168,7 @@ class ContactData extends Component {
                     <button onClick={this.handleSortAZUNDZA}>A-Z oder Z-A</button>
                     <button onClick={this.SortRateLowHigh}>Prioriät aufsteigend</button>
                     <button onClick={this.SortRateHighLow}>Prioriät absteigend</button>
+                    <button onClick={this.SorteRateLowHighUNDHighLow}>Priorität aufsteigend oder absteigend</button>
                     <button onClick={this.ShowAllTheFaces}>Show all 200 oder blende alle bis auf 5 aus</button>
                 </div>
                 <header className="Grid">
