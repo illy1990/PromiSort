@@ -166,9 +166,9 @@ class ContactData extends Component {
                     <button onClick={this.handleSortAZ}>Sortieren A-Z</button>
                     <button onClick={this.handleSortZA}>Sortieren Z-A</button>
                     <button onClick={this.handleSortAZUNDZA}>A-Z oder Z-A</button>
-                    <button onClick={this.SortRateLowHigh}>Prioriät aufsteigend</button>
-                    <button onClick={this.SortRateHighLow}>Prioriät absteigend</button>
-                    <button onClick={this.SorteRateLowHighUNDHighLow}>Priorität aufsteigend oder absteigend</button>
+                    <button onClick={this.SortRateLowHigh}>Popularität aufsteigend</button>
+                    <button onClick={this.SortRateHighLow}>Popularität absteigend</button>
+                    <button onClick={this.SorteRateLowHighUNDHighLow}>Popularität aufsteigend oder absteigend</button>
                     <button onClick={this.ShowAllTheFaces}>Show all 200 oder blende alle bis auf 5 aus</button>
                 </div>
                 <header className="Grid">
