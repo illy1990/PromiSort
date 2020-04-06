@@ -1,0 +1,17 @@
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+img {
+    height: 100px;
+    margin: 5px auto;
+}
+
+h1 {
+    margin: 25px auto;
+}
+
+button {
+    margin: 25px 50px;
+}
